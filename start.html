@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="">
+      <label for="email">e-mail</label>
+      <input type="email" name="email" id="email" placeholder="qwerty@gmail.com">
+      <br/>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" placeholder="Password">
+      <br>
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" pattern="[A-Za-z]+" minlength="2" placeholder="Full Name">
+      <br>
+      <label for="dateofbirth">Date of Birth</label>
+      <input type="date" id="dateofbirth" name="dateofbirth">
+      <br>
+      <label for="phonenumber">Phone Number</label>
+      <input type="tel" pattern="[0-9]*" placeholder="Phone Number">
+      <br>
+      <label>Choose a plan:</label>
+      <select>
+        <optgroup name="plans">
+          <option value="free">Free Plan</option>
+          <option value="plan1">Plan 1 - $10/Month</option>
+          <option value="plan2">Plan 2 - $20/Month</option>
+          <option value="plan3">Plan 3 - $30/Month</option>
+        </optgroup>  
+      </select><br>
+      <label>Pro Plan - $50/Month</label>
+      <input type="checkbox" name="pro_plan" value="pro">
+      <label>Credit Card Number</label>
+      <input type="text" name="cc_number" placeholder="Enter your credit card number"><br>
+      <label>CVC</label>
+      <input type="number" maxlength="3" placeholder="CVC">
+      <label for="expdate">Expiration Date</label>
+      <input type="date" id="expdate" name="extdate">
+      <label for="billingaddress">Billing Address</label>
+      <input type="text" name="address" placeholder="Billing Address"><br>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
